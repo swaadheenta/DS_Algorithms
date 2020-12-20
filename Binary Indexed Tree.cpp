@@ -45,11 +45,10 @@ int main()
     cout<<"Enter the elements of the array";
     for(int i=0;i<p;i++)
     cin>>freq[i];
-    int n = sizeof(freq)/sizeof(freq[0]);
     int *BITree = constructBITree(freq, n);
     cout << "Sum of elements in arr[0..5] is "<< getSum(BITree, 5);
     freq[3] += 6;
-    updateBIT(BITree, n, 3, 6);
+    updateBIT(BITree, p, 3, 6);
     cout << "\nSum of elements in arr[0..5] after update is "<< getSum(BITree, 5);
     return 0;
 }
