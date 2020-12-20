@@ -55,10 +55,9 @@ int main()
     cout<<"Enter the elements of the array";
     for(int i=0;i<p;i++)
     cin>>arr[i];
-    int n = sizeof(arr)/sizeof(arr[0]);
-    int *st = constructST(arr, n);
+    int *st = constructST(arr, p);
     int qs = 1;
     int qe = 5;
-    cout<<"Minimum of values in range ["<<qs<<", "<<qe<<"] "<< "is = "<<RMQ(st, n, qs, qe)<<endl;
+    cout<<"Minimum of values in range ["<<qs<<", "<<qe<<"] "<< "is = "<<RMQ(st, p, qs, qe)<<endl;
     return 0;
 }
