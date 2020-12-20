@@ -29,12 +29,10 @@ int main()
     cout<<"Enter the values of array";
     for(int i=0;i<p;i++)
         cin>>a[i];
-    int n = sizeof(a) / sizeof(a[0]);
-    buildSparseTable(a, n);
+    buildSparseTable(a, p);
     cout<<"enter the range i.e L and R value";
     int L,R;
     cin>>L>>R;
     cout << query(L, R) << endl;
     return 0;
 }
-
