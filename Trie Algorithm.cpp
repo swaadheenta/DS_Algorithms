@@ -55,9 +55,8 @@ int main()
     cout<<"Enter the elements of the array";
     for(int i=0;i<p;i++)
         cin>>keys[i];
-    int n = sizeof(keys)/sizeof(keys[0]);
     struct TrieNode *root = getNode();
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < p; i++)
         insert(root, keys[i]);
     cout<<"Enter the string to be searched";
     string str;
